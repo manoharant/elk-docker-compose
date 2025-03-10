@@ -1,0 +1,24 @@
+filebeat.inputs:
+  - type: filestream
+    enabled: true
+    paths:
+      - /logs/*.log
+    parsers:
+      - multiline:
+          type: pattern
+          pattern: '^[0-9]{4}|^\[[0-9]{4}|^@'
+          negate: true
+          match: after
+          max_lines: 2000
+        close_inactive: 24h
+processors:
+  - add_fields:
+      target: "@metadata"
+      fields:
+        source: be
+        type: logs
+output:
+  logstash:
+    hosts: ["logstash:5044"]
+    pipelining: 0
+    ttl: 1m

@@ -1,0 +1,62 @@
+Use Case 1: (On Call incident)
+ 
+Prompt 1:
+
+Summarize the LCAGIM-49496 
+ 
+Prompt 2 : 
+
+get me all the similar incidents with the details
+ 
+ 
+Use Case 2: (Incident analysis)
+ 
+Choose the JIRA options
+ 
+Prompt 1: 
+
+Summarize the details for LCAGIM-49798
+ 
+Choose the Log options
+ 
+Prompt 2: 
+
+Fetch the logs and summarize for the conversationid
+ 
+Prompt 3: 
+
+Give me the full error response json
+ 
+Change to JIRA
+ 
+prompt 4: 
+
+create a defect with the details
+ 
+prompt 5: 
+
+notify in teams
+ 
+prompt 6: 
+
+update the incident with the defect details
+ 
+ 
+Use Case 3: (Incident analysis from attachment)
+Choose Logs
+ 
+Prompt 1: 
+
+Paste the screen shot and summarize
+ 
+Prompt 2: 
+
+Give me the full error response json
+ 
+Prompt 3: 
+
+Create a defect with the details
+
+prompt 4: 
+
+notify in teams
