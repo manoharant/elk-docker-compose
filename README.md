@@ -14,6 +14,4 @@
 
 - Booking Transaction to search
 
-  - 836446a1-6531-4844-8419-3ae110ef8abe
-
-#Whenever the new issues are created, you need to publish the message in the Microsoft Teams channel by calling #'publish_message_in_teams_channel' and update the jira issue with comments by calling #'update_jira_issue_with_comments' to update the created issue.
+  - 9c7f2041-fb2e-4ad3-8acc-d292ce2c8ab4

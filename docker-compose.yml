@@ -53,8 +53,8 @@ services:
     restart: always
     volumes:
       - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml
-      - /var/lib/docker/containers:/var/lib/docker/containers:ro
-      - /var/run/docker.sock:/var/run/docker.sock
+      #- /var/lib/docker/containers:/var/lib/docker/containers:ro
+      #- /var/run/docker.sock:/var/run/docker.sock
       - ./logs:/logs
     command: filebeat -e --strict.perms=false
     networks:
